@@ -38,6 +38,7 @@ h1, h2 {
   }
 
   h2 {
+    
     margin-bottom: 60px;
   }
 }
@@ -57,7 +58,7 @@ h1, h2 {
   background-color: #464646;
 
   .users-new-container {
-    padding-top: 220px;
+    padding-top: 100px;
 
     .form-group {
       margin-bottom: 20px;
@@ -65,3 +66,9 @@ h1, h2 {
   }
 }
 
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
