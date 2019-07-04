@@ -49,6 +49,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
+  gem "carrierwave"
   # 追加分ここまで 
 end
 
