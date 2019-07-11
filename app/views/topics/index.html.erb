@@ -13,10 +13,16 @@
                   <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon' %>
                <% end %>
             <% end %>
-            <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
+            <%= link_to new_comment_path(topic_id: topic.id), method: :get do %>
+              <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
+            <% end %>
             <p class="topic-text">
-              <%= topic.description %>
+             <%= topic.description %>
             </p>
+              <h3 class="topic-author">コメント</h3>
+             <% topic.comments.each do |comment| %>
+               <p class="topic-author"><%= comment.body.html_safe %></p>
+             <% end %>
           </div>
         </div>
       </div>
